@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header-logo" src="./img/Logo-1.png" alt="">
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div class="main">
+            
+            
+            <div class="seccion1">
+                <textarea id="ingresoTexto" class="ingreso-texto" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="seccion1-advertencia">
+                    <img src="./img/Vector.png" alt="">
+                    <samp class="seccion1-info">Solo letras minúsculas y sin acentos</samp>
+
+                    <div class="seccion1-botones">
+                        <button id="buttonEncriptar" class="button-encriptar">Encriptar</button>
+                        <button id="buttonDesencriptar"class="button-desencriptar">Desencriptar</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+    
+            <div id="seccion2" class="seccion2">
+                <img id="muneco" class="muneco" src="./img/Muñeco.png" alt="">                                            
+                <textarea id="mensajeFinal" class="mensaje-final ajustar"placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="seccion2Info" class="seccion2-info">Ingresa el texto que desees encriptar o desencriptar</p>              
+                <button class="button-copiar oculto" id="buttonCopiar">Copiar</button>
+    
+            </div>
+        </div>
+                
+        
+    </main>
+
+     <!--
+    <footer>
+
+    </footer>
+     --> 
+
+    <script src="./js/script.js"></script>;
+
+</body>
+</html>
